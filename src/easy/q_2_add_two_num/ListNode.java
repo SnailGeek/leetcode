@@ -1,4 +1,4 @@
-package q_2_add_two_num;
+package easy.q_2_add_two_num;
 
 public class ListNode {
     int val;
