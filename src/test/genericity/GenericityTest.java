@@ -1,7 +1,5 @@
 package test.genericity;
 
-import com.google.common.collect.Lists;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -102,13 +100,13 @@ public class GenericityTest {
         }
 
 
-
-        List<Fruit> fruits = Lists.newArrayList(fruit);
-        List<Apple> apples = Lists.newArrayList(apple);
-        ExtendsClass extendsClass = new ExtendsClass();
-        // List<? extends Fruit> extendsList可以接收List<Fruit>/List<Apple>
-        extendsClass.extendsMethod(fruits);
-        extendsClass.extendsMethod(apples);
+//
+//        List<Fruit> fruits = Lists.newArrayList(fruit);
+//        List<Apple> apples = Lists.newArrayList(apple);
+//        ExtendsClass extendsClass = new ExtendsClass();
+//        // List<? extends Fruit> extendsList可以接收List<Fruit>/List<Apple>
+//        extendsClass.extendsMethod(fruits);
+//        extendsClass.extendsMethod(apples);
     }
 
 

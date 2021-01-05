@@ -1,10 +1,11 @@
 package q_2_add_two_num;
 
-import java.lang.reflect.Array;
+import easy.linkList.common.ListNode;
+
 import java.util.Arrays;
 import java.util.List;
 
-class Solution {
+public class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         if (l1 == null) {
             return l2;
