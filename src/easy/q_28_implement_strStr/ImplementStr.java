@@ -11,26 +11,28 @@ public class ImplementStr {
         if (needle.equals("")) {
             return 0;
         }
-        int index = 0, result = -1;
+        int result = -1;
         for (int i = 0; i < haystack.length(); i++) {
-            if (haystack.charAt(i) == needle.charAt(index)) {
-                if (result == -1) {
-                    result = i;
+            result = i;
+            for (int j = i; j < haystack.length(); j++) {
+                if (haystack.charAt(j) != needle.charAt(j - i)) {
+                    break;
                 }
-                if (index == needle.length() - 1) {
+                if (j - i == needle.length() - 1) {
                     return result;
                 }
-                index++;
-            } else {
-                result = -1;
             }
+
         }
-        return index == needle.length() ? result : -1;
+        return result == haystack.length() - 1 ? -1 : result;
     }
 
     public static void main(String[] args) {
-        String hayStack = "mississippi";
-        String needle = "issip";
+//        String hayStack = "mississippi";
+//        String needle = "issip";
+
+        String hayStack = "baaaa";
+        String needle = "aaa";
         ImplementStr implementStr = new ImplementStr();
         System.out.println(implementStr.strStr(hayStack, needle));
     }
