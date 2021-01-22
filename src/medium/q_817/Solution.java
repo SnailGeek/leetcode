@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
+// 这个题目中，是最长的链表是一个组件
 public class Solution {
     public static int numComponents(ListNode head, int[] G) {
         Set<Integer> set = new HashSet();
