@@ -1,9 +1,7 @@
 package offer;
 
-import com.sun.javafx.image.IntPixelGetter;
-
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @program: BuildTree07
@@ -12,28 +10,27 @@ import java.util.List;
  * @date: 2021-03-08 15:45
  **/
 public class BuildTree07 {
-    public static TreeNode buildTree(int[] preorder, int[] inorder) {
+    private Map<Integer, Integer> indexMap = new HashMap<>();
 
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+        for (int i = 0; i < inorder.length; i++) {
+            indexMap.put(inorder[i], i);
+        }
+        int n = preorder.length;
+        return doBuildTree(preorder, inorder, 0, n - 1, 0, n - 1);
+    }
 
-
-        for (int i = 0; i < preorder.length; i++) {
-            List<Integer> left = new ArrayList<>();
-            List<Integer> right = new ArrayList<>();
-            int rootIndex = -1;
-            for (int j = 0; j < inorder.length; j++) {
-                if (preorder[i] == preorder[j]) {
-                    rootIndex = j;
-                }
-                if (rootIndex == -1) {
-                    left.add(inorder[j]);
-                } else {
-                    right.add(inorder[j]);
-                }
-            }
-            TreeNode rootNode = new TreeNode(inorder[rootIndex]);
-
+    public TreeNode doBuildTree(int[] preorder, int[] inorder, int preStart, int preEnd, int inStart, int inEnd) {
+        if (inStart < inEnd) {
+            return null;
         }
 
+        TreeNode root = new TreeNode(preorder[preStart]);
+        Integer rootIndex = indexMap.get(preorder[preStart]);
+        int leftNodeCount = rootIndex - inStart;
+        root.left = doBuildTree(preorder, inorder, preStart + 1, preStart + leftNodeCount, inStart, rootIndex - 1);
+        root.right = doBuildTree(preorder, inorder, preStart + leftNodeCount + 1, preEnd, rootIndex + 1, inEnd);
+        return root;
     }
 
 
