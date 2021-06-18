@@ -56,6 +56,25 @@ public class Solution {
         return result;
     }
 
+
+    public int[] nextLargerNodes3(ListNode head) {
+        List<Integer> arrays = new ArrayList<>();
+        while (head != null) {
+            arrays.add(head.val);
+            head = head.next;
+        }
+        Stack<Integer> stack = new Stack<>();
+        int[] result = new int[arrays.size()];
+        for (int i = 0; i < arrays.size(); i++) {
+            while (!stack.isEmpty() && arrays.get(stack.peek()) < arrays.get(i)) {
+                result[stack.pop()] = arrays.get(i);
+            }
+            stack.push(i);
+        }
+        return result;
+    }
+
+
     public static void main(String[] args) {
         ListNode head = ListNode.geNerateLinkedList(Arrays.asList(2, 1, 5));
         int[] ints = nextLargeNodes2(head);

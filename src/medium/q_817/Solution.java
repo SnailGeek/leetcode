@@ -41,6 +41,24 @@ public class Solution {
         return false;
     }
 
+    // 官方解法
+    public int numComponents2(ListNode head, int[] nums) {
+        Set<Integer> numSet = new HashSet<>();
+        for (int num : nums) {
+            numSet.add(num);
+        }
+        ListNode cur = head;
+        int ret = 0;
+        while (cur != null) {
+            if (numSet.contains(cur.val) && (cur.next == null || !numSet.contains(cur.next.val))) {
+                ret++;
+            }
+            cur = cur.next;
+        }
+        return ret;
+    }
+
+
     public static void main(String[] args) {
         ListNode head = ListNode.geNerateLinkedList(Arrays.asList(0, 1, 2, 3));
         int[] G = {4};
