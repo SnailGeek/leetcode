@@ -1,4 +1,4 @@
-package list.medium.q_24;
+package list.medium.q_24_swap_nodes_in_pairs;
 
 import list.common.ListNode;
 
