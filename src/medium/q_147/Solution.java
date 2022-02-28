@@ -63,7 +63,7 @@ public class Solution {
     public static void main(String[] args) {
 //        ListNode.printLinkedList(insertionSortList(ListNode.geNerateLinkedList(Arrays.asList(6, 8, 7, 2, 4))));
 //        ListNode.printLinkedList(insertionSortList(ListNode.geNerateLinkedList(Arrays.asList(6, 5, 3, 1, 8, 7, 2, 4))));
-        ListNode.printLinkedList(insertionSortList(ListNode.geNerateLinkedList(Arrays.asList(4, 19, 14, 5, -3, 1, 8, 5, 11, 15))));
+        ListNode.printLinkedList(insertionSortList(ListNode.generateList(Arrays.asList(4, 19, 14, 5, -3, 1, 8, 5, 11, 15))));
 //        ListNode.printLinkedList(insertionSortList(ListNode.geNerateLinkedList(Arrays.asList(1, 1))));
     }
 }

@@ -60,6 +60,6 @@ public class Solution {
 
     public static void main(String[] args) {
         Solution so = new Solution();
-        ListNode.printLinkedList(so.sortList(ListNode.geNerateLinkedList(Arrays.asList(4, 2, 1, 3))));
+        ListNode.printLinkedList(so.sortList(ListNode.generateList(Arrays.asList(4, 2, 1, 3))));
     }
 }

@@ -44,7 +44,7 @@ public class Solution {
 
     public static void main(String[] args) {
 //        ListNode.printLinkedList(swapPairs2(ListNode.geNerateLinkedList(Arrays.asList(1, 2, 3, 4, 5, 6))));
-        ListNode.printLinkedList(swapPairs2(ListNode.geNerateLinkedList(Arrays.asList(1, 2, 3, 4, 5))));
+        ListNode.printLinkedList(swapPairs2(ListNode.generateList(Arrays.asList(1, 2, 3, 4, 5))));
 //        ListNode.printLinkedList(swapPairs2(ListNode.geNerateLinkedList(Arrays.asList(1, 2, 3))));
 //        ListNode.printLinkedList(swapPairs2(ListNode.geNerateLinkedList(Arrays.asList(1))));
     }

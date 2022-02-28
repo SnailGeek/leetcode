@@ -26,6 +26,6 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        ListNode.printLinkedList(partition(ListNode.geNerateLinkedList(Arrays.asList(1, 4, 3, 2, 5, 2)), 3));
+        ListNode.printLinkedList(partition(ListNode.generateList(Arrays.asList(1, 4, 3, 2, 5, 2)), 3));
     }
 }

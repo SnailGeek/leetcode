@@ -37,6 +37,6 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        ListNode.printLinkedList(reorderList(ListNode.geNerateLinkedList(Arrays.asList(1, 2, 3, 4))));
+        ListNode.printLinkedList(reorderList(ListNode.generateList(Arrays.asList(1, 2, 3, 4))));
     }
 }

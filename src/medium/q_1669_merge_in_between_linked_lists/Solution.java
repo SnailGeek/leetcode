@@ -76,8 +76,8 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        ListNode list1 = ListNode.geNerateLinkedList(Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9));
-        ListNode list2 = ListNode.geNerateLinkedList(Arrays.asList(1000000, 1000001, 1000002, 1000003, 1000004, 1000005, 1000006));
+        ListNode list1 = ListNode.generateList(Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9));
+        ListNode list2 = ListNode.generateList(Arrays.asList(1000000, 1000001, 1000002, 1000003, 1000004, 1000005, 1000006));
         ListNode.printLinkedList(mergeInBetween2(list1, 3, 5, list2));
 
     }

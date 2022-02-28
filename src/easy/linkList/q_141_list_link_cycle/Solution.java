@@ -19,7 +19,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        ListNode head = ListNode.geNerateLinkedList(Arrays.asList(1));
+        ListNode head = ListNode.generateList(Arrays.asList(1));
         System.out.println(hasCycle(head));
     }
 } 

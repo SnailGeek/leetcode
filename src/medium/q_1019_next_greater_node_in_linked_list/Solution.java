@@ -76,7 +76,7 @@ public class Solution {
 
 
     public static void main(String[] args) {
-        ListNode head = ListNode.geNerateLinkedList(Arrays.asList(2, 1, 5));
+        ListNode head = ListNode.generateList(Arrays.asList(2, 1, 5));
         int[] ints = nextLargeNodes2(head);
         for (int num : ints) {
             System.out.printf(num + " ,");

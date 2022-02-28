@@ -39,6 +39,6 @@ public class Solution {
 
 
     public static void main(String[] args) {
-        ListNode.printLinkedList(middleNode2(ListNode.geNerateLinkedList(Arrays.asList(1, 2, 3, 4, 5, 6))));
+        ListNode.printLinkedList(middleNode2(ListNode.generateList(Arrays.asList(1, 2, 3, 4, 5, 6))));
     }
 }

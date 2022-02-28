@@ -43,8 +43,8 @@ public class Solution {
 
 
     public static void main(String[] args) {
-        System.out.println(getDecimalValue(ListNode.geNerateLinkedList(Arrays.asList(1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0))));
-        System.out.println(getApproach2(ListNode.geNerateLinkedList(Arrays.asList(1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0))));
+        System.out.println(getDecimalValue(ListNode.generateList(Arrays.asList(1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0))));
+        System.out.println(getApproach2(ListNode.generateList(Arrays.asList(1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0))));
     }
 }
 

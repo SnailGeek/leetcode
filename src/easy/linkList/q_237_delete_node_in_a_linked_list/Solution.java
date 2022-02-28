@@ -13,7 +13,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        ListNode head = ListNode.geNerateLinkedList(Arrays.asList(1, 2));
+        ListNode head = ListNode.generateList(Arrays.asList(1, 2));
         ListNode p = head.next;
         deleteNode(p);
         ListNode.printLinkedList(head);

@@ -60,7 +60,7 @@ public class Solution {
 
 
     public static void main(String[] args) {
-        ListNode head = ListNode.geNerateLinkedList(Arrays.asList(0, 1, 2, 3));
+        ListNode head = ListNode.generateList(Arrays.asList(0, 1, 2, 3));
         int[] G = {4};
         System.out.println(numComponents(head, G));
     }

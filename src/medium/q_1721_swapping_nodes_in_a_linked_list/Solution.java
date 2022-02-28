@@ -70,6 +70,6 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        ListNode.printLinkedList(swapNodes3(ListNode.geNerateLinkedList(Arrays.asList(1, 2, 3, 4, 5)), 2));
+        ListNode.printLinkedList(swapNodes3(ListNode.generateList(Arrays.asList(1, 2, 3, 4, 5)), 2));
     }
 }

@@ -18,7 +18,7 @@ public class ListNode {
         this.next = next;
     }
 
-    public static ListNode geNerateLinkedList(List<Integer> nums) {
+    public static ListNode generateList(List<Integer> nums) {
         ListNode head = new ListNode(nums.get(0), null);
         ListNode p = head;
         for (int i = 1; i < nums.size(); i++) {

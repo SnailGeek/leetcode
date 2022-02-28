@@ -41,9 +41,9 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        ListNode head1 = ListNode.geNerateLinkedList(Arrays.asList(1, 2, 3, 2));
-        ListNode head2 = ListNode.geNerateLinkedList(Arrays.asList(2, 2, 2));
-        ListNode head3 = ListNode.geNerateLinkedList(Arrays.asList(2, 2, 1));
+        ListNode head1 = ListNode.generateList(Arrays.asList(1, 2, 3, 2));
+        ListNode head2 = ListNode.generateList(Arrays.asList(2, 2, 2));
+        ListNode head3 = ListNode.generateList(Arrays.asList(2, 2, 1));
         System.out.println("head1:");
         ListNode.printLinkedList(removeElements2(head1, 2));
         System.out.println("head2:");

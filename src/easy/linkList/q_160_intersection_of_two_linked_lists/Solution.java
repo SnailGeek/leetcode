@@ -113,8 +113,8 @@ public class Solution {
 
     public static void main(String[] args) {
         //5,6,1,8,4,5
-        ListNode head = ListNode.geNerateLinkedList(Arrays.asList(4, 1, 8, 4, 5));
-        ListNode head2 = ListNode.geNerateLinkedList(Arrays.asList(5, 6, 1, 8, 4, 5));
+        ListNode head = ListNode.generateList(Arrays.asList(4, 1, 8, 4, 5));
+        ListNode head2 = ListNode.generateList(Arrays.asList(5, 6, 1, 8, 4, 5));
         ListNode.printLinkedList(getIntersectionNode(head, head2));
     }
 }

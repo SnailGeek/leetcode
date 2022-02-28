@@ -2,7 +2,6 @@ package easy.linkList.q_206_reverse_linked_list;
 
 import easy.linkList.common.ListNode;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 
@@ -22,7 +21,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        ListNode head = ListNode.geNerateLinkedList(Arrays.asList(1,2));
+        ListNode head = ListNode.generateList(Arrays.asList(1,2));
         ListNode newHead = reverseList(head);
         ListNode.printLinkedList(newHead);
 
